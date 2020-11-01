@@ -9,7 +9,7 @@ import com.tomtom.ecommerce.entity.CartInfo;
 @Repository
 public interface CartRepo extends JpaRepository<CartInfo, String> {
 	
-	@Query("select c from cart_info c where  user_id= ?1")
+	@Query("select c from cart_info c where  user_id= ?1 and cart_submitted= false")
 	CartInfo getcartInfoForUseid(String userid);
 
 }

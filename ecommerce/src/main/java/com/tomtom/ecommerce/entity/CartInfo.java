@@ -19,6 +19,17 @@ public class CartInfo {
 	private UserInfo userinfo;
 	
 	private Date createdDate;
+	
+	private boolean cartSubmitted=false;
+
+	
+	public boolean isCartSubmitted() {
+		return cartSubmitted;
+	}
+
+	public void setCartSubmitted(boolean cartSubmitted) {
+		this.cartSubmitted = cartSubmitted;
+	}
 
 	public String getCartId() {
 		return cartId;

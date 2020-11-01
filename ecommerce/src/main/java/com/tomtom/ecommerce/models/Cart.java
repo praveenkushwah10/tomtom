@@ -7,6 +7,17 @@ public class Cart {
 	private String cartId;
 	
 	private List<Product> products;
+	
+	private int total;
+	
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 
 	public String getCartId() {
 		return cartId;

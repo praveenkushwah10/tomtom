@@ -4,15 +4,16 @@ import java.util.List;
 
 import com.tomtom.ecommerce.exception.BadRequestException;
 import com.tomtom.ecommerce.models.Product;
+import com.tomtom.ecommerce.models.Response;
 
 
 public interface ProductService {
 	
-	public List<Product> getAllProducts();
+	public Response<List<Product>> getAllProducts();
 	
-	public Product getProduct(String productId);
+	public Response<Product> getProduct(String productId);
 
-	public void addProduct(Product newProduct, String jwtToken) throws BadRequestException;
+	public Response<Product> addProduct(Product newProduct, String jwtToken) throws BadRequestException;
 	
 
 }

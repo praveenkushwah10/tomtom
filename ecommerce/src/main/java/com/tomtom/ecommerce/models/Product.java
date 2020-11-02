@@ -10,14 +10,14 @@ public class Product {
 	
 	private int price;
 	
-	private int count;
+	private int quantity;
 	
-	public int getCount() {
-		return count;
+	public int getQuantity() {
+		return quantity;
 	}
 
-	public void setCount(int count) {
-		this.count = count;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 	public Product(String productName, String productId, int price) {
